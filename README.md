@@ -78,13 +78,12 @@ This launches both the Express backend and the React frontend concurrently in th
 1. Type a comma-separated list of ingredients you have available (e.g. `chicken breast, garlic, lemon, spinach`)
 2. Select the number of servings and any dietary restrictions from the dropdowns
 3. Click **Generate Recipe**
-4. The app calls your Express backend, which securely contacts the Groq API and returns a structured recipe
 
 ---
 
 ## System Prompt
 
-The following system prompt is injected on the backend in `server/routes/generate.js`. The user never sees or controls this prompt — it constrains the LLM to behave strictly as a recipe generator and always return a consistent JSON structure:
+The following system prompt is injected, it constrains the LLM to behave strictly as a recipe generator and always return a consistent JSON structure:
 
 ```
 You are "Pantry-to-Plate", a professional chef assistant. Your ONLY job is to generate
