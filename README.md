@@ -19,42 +19,49 @@ Pantry-to-Plate lets you type in the ingredients you already have at home and in
 
 ### Step 1 — Clone the repository
 
+This downloads the project onto your computer. Open a terminal, navigate to wherever you want the project to live, and run:
+
 ```bash
 git clone https://github.com/jeffjsy/FoodPrepper.git
 cd FoodPrepper
 ```
 
-### Step 2 — Create your .env file
+---
 
-Navigate into the server folder and create a `.env` file from the example template:
+### Step 2 — Add your API key
+
+The app needs your Groq API key to work, but for security reasons it's not included in the repository. You need to create a file called `.env` in the `server/` folder to store it.
+
+In your terminal, run:
 
 ```bash
 cd server
 cp .env.example .env
 ```
 
-Open `server/.env` and replace the placeholder with your API key:
+This creates a new file called `.env` by copying the example template. Now open `server/.env` in any text editor and replace the placeholder with your real Groq API key:
 
 ```
-GROQ_API_KEY=your_real_groq_api_key_here
+GROQ_API_KEY=paste_your_groq_key_here
 PORT=5000
 ```
 
-Then return to the root:
+Save the file, then navigate back to the root folder:
 
 ```bash
 cd ..
 ```
 
-### Step 3 — Install all dependencies
+> ⚠️ Never share or commit your `.env` file. It contains your private API key. It is already listed in `.gitignore` so git will ignore it automatically.
 
-From the root folder, run:
+---
+
+### Step 3 — Install dependencies
 
 ```bash
 npm run install:all
 ```
-
-This installs dependencies for both the server and client in one command.
+---
 
 ### Step 4 — Run the app
 
@@ -64,12 +71,18 @@ From the root folder, run:
 npm run dev
 ```
 
-This launches both the Express backend and the React frontend concurrently in the same terminal window.
+This starts both the backend server and the React frontend at the same time in one terminal window. Once it's ready, open your browser and go to:
+
+```
+http://localhost:3000
+```
 
 | Service  | URL                   |
 |----------|-----------------------|
 | Frontend | http://localhost:3000 |
 | Backend  | http://localhost:5000 |
+
+> If the page doesn't load, make sure both services started without errors in the terminal.
 
 ---
 
