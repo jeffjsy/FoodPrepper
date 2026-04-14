@@ -20,7 +20,7 @@ Pantry-to-Plate lets you type in the ingredients you already have at home and in
 ### Step 1 — Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jeffjsy/FoodPrepper.git
 cd FoodPrepper
 ```
 
@@ -33,7 +33,7 @@ cd server
 cp .env.example .env
 ```
 
-Open `server/.env` and replace the placeholder with your real Groq API key:
+Open `server/.env` and replace the placeholder with your API key:
 
 ```
 GROQ_API_KEY=your_real_groq_api_key_here
