@@ -1,3 +1,5 @@
+/* Styles for the ingredient input form — textarea, dropdowns, and submit button */
+
 .input-form {
   background: var(--color-surface);
   border: 1px solid var(--color-border);

@@ -1,3 +1,5 @@
+/* Styles for the recipe output card — meta row, ingredients list, steps, and tip box */
+
 .recipe-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);

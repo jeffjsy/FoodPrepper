@@ -3,6 +3,7 @@
 
 import React from "react";
 import "./RecipeCard.css";
+import ReactMarkdown from "react-markdown";
 
 function RecipeCard({ recipe }) {
   // Difficulty badge colour
@@ -73,7 +74,7 @@ function RecipeCard({ recipe }) {
       {recipe.tips && (
         <div className="recipe-card__tip">
           <span className="tip-icon">💡</span>
-          <p>{recipe.tips}</p>
+          <ReactMarkdown>{recipe.tips}</ReactMarkdown>
         </div>
       )}
     </article>

@@ -1,3 +1,5 @@
+/* Styles for the loading spinner shown while the API call is in progress */
+
 .spinner-wrapper {
   display: flex;
   flex-direction: column;

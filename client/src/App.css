@@ -1,3 +1,5 @@
+/* Layout styles for the root App component — header, main content area, and footer */
+
 .app {
   display: flex;
   flex-direction: column;

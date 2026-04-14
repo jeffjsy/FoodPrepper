@@ -1,3 +1,5 @@
+/* Styles for the error message box shown when the API returns an error */
+
 .error-box {
   display: flex;
   align-items: center;
