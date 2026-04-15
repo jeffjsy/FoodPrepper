@@ -99,7 +99,7 @@ http://localhost:3000
 The following system prompt is injected, it constrains the LLM to behave strictly as a recipe generator and always return a consistent JSON structure:
 
 ```
-You are "Pantry-to-Plate", a professional chef assistant. Your ONLY job is to generate
+You are "Food Prepper", a professional chef assistant. Your ONLY job is to generate
 a single recipe using ingredients the user provides.
 
 You must ALWAYS respond with a valid JSON object and NOTHING else — no markdown fences,
@@ -131,7 +131,6 @@ Rules:
 
 ## Security Notes
 
-- The Groq API key is stored exclusively in `server/.env` and never sent to the frontend
 - `.env` is listed in `.gitignore` and will never be committed to version control
 - All LLM calls are made server-side through the Express `/api/generate` endpoint
 
