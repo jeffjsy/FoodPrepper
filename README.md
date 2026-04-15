@@ -131,7 +131,6 @@ Rules:
 
 ## Security Notes
 
-- The Groq API key is stored exclusively in `server/.env` and never sent to the frontend
 - `.env` is listed in `.gitignore` and will never be committed to version control
 - All LLM calls are made server-side through the Express `/api/generate` endpoint
 
