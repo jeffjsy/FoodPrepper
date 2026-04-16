@@ -26,7 +26,7 @@ function App() {
     setChatHistory([]);
 
     try {
-      const response = await fetch("/api/generate", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -66,7 +66,7 @@ function App() {
     setChatHistory(updatedHistory);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: updatedHistory }),
