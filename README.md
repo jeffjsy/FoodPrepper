@@ -1,10 +1,10 @@
-# 🍳 Pantry-to-Plate
+# 🍳 food Prepper
 
 A full-stack LLM wrapper web application built with React and Node.js for COMP-308 Assignment 4.
 
 ## Purpose
 
-Pantry-to-Plate lets you type in the ingredients you already have at home and instantly generates a complete, structured recipe — including prep time, cook time, step-by-step instructions, and a chef's tip. The app uses a strict backend system prompt to ensure the LLM always responds with consistent, well-formatted recipe data.
+Food Prepper lets you type in the ingredients you already have at home and instantly generates a complete, structured recipe — including prep time, cook time, step-by-step instructions, and a chef's tip. The app uses a strict backend system prompt to ensure the LLM always responds with consistent, well-formatted recipe data.
 
 ---
 

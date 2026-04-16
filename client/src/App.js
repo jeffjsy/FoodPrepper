@@ -97,7 +97,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-icon">🍳</div>
-        <h1 className="app-title">Pantry-to-Plate</h1>
+        <h1 className="app-title">Food Prepper</h1>
         <p className="app-subtitle">
           Tell us what's in your fridge. We'll tell you what to make.
         </p>
@@ -120,7 +120,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>COMP-308 Assignment 4 · Pantry-to-Plate</p>
+        <p>COMP-308 Assignment 4 · Food Prepper</p>
       </footer>
     </div>
   );
