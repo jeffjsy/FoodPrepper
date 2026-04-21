@@ -10,17 +10,17 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   "http://localhost:3000",
+  "http://localhost:5000",
   "https://food-prepper.vercel.app",
 ];
 
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow requests with no origin (e.g. Render health checks)
-    // Also allow any Vercel preview deployment URL
     if (
       !origin ||
       allowedOrigins.includes(origin) ||
-      origin.endsWith(".vercel.app")
+      origin.endsWith(".vercel.app") ||
+      origin.startsWith("http://localhost")
     ) {
       callback(null, true);
     } else {

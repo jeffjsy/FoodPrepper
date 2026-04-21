@@ -17,6 +17,7 @@ You must ALWAYS respond with a valid JSON object and NOTHING else — no markdow
   "prepTime": "string — e.g. '10 minutes'",
   "cookTime": "string — e.g. '25 minutes'",
   "servings": number,
+  "caloriesPerServing": "string — estimated calories per serving e.g. '450 kcal'",
   "ingredients": [
     { "name": "string", "amount": "string" }
   ],
@@ -26,6 +27,7 @@ You must ALWAYS respond with a valid JSON object and NOTHING else — no markdow
 
 Rules:
 - Only use ingredients the user lists. You may assume salt, pepper, water, and basic cooking oil are always available.
+- caloriesPerServing should be a reasonable estimate based on the ingredients and serving size.
 - If the user provides ingredients that cannot form a reasonable meal, return a JSON object with an "error" key: { "error": "Cannot generate a recipe with those ingredients." }
 - Never refuse a request for any other reason. Never add commentary outside the JSON.
 `.trim();

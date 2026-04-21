@@ -16,7 +16,7 @@ const DIETARY_OPTIONS = [
 
 function InputForm({ onSubmit, loading }) {
   const [ingredients, setIngredients] = useState("");
-  const [servings, setServings] = useState(2);
+  const [servings, setServings] = useState(1);
   const [dietary, setDietary] = useState("None");
 
   const handleSubmit = (e) => {

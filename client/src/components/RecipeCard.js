@@ -38,6 +38,13 @@ function RecipeCard({ recipe }) {
           <span className="meta-label">Serves</span>
           <span className="meta-value">{recipe.servings}</span>
         </div>
+        {recipe.caloriesPerServing && (
+          <div className="meta-item">
+            <span className="meta-icon">⚡</span>
+            <span className="meta-label">Calories</span>
+            <span className="meta-value">{recipe.caloriesPerServing}</span>
+          </div>
+        )}
         <div className="meta-item">
           <span className={`badge ${difficultyClass}`}>{recipe.difficulty}</span>
         </div>
@@ -50,7 +57,7 @@ function RecipeCard({ recipe }) {
           <ul className="ingredients-list">
             {recipe.ingredients.map((item, idx) => (
               <li key={idx} className="ingredient-item">
-                <span className="ingredient-amount">{item.amount}</span>
+                <span className="ingredient-amount">{item.amount} </span>
                 <span className="ingredient-name">{item.name}</span>
               </li>
             ))}
